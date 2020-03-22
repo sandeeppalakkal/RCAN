@@ -19,7 +19,7 @@ parser.add_argument('--seed', type=int, default=1,
                     help='random seed')
 
 # Data specifications
-parser.add_argument('--dir_data', type=str, default='/home/yulun/data/SR/traindata/DIV2K/bicubic',
+parser.add_argument('--dir_data', type=str, default='/content/gdrive/My\ Drive/Div2k_Small_4x',
                     help='dataset directory')
 parser.add_argument('--dir_demo', type=str, default='../test',
                     help='demo image directory')
@@ -29,11 +29,11 @@ parser.add_argument('--data_test', type=str, default='DIV2K',
                     help='test dataset name')
 parser.add_argument('--benchmark_noise', action='store_true',
                     help='use noisy benchmark sets')
-parser.add_argument('--n_train', type=int, default=800,
+parser.add_argument('--n_train', type=int, default=100,
                     help='number of training set')
 parser.add_argument('--n_val', type=int, default=5,
                     help='number of validation set')
-parser.add_argument('--offset_val', type=int, default=800,
+parser.add_argument('--offset_val', type=int, default=100,
                     help='validation index offest')
 parser.add_argument('--ext', type=str, default='sep_reset',
                     help='dataset file extension')
